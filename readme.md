@@ -8,5 +8,36 @@ ProRename批量重命名工具，采用VBA实现
 5. 可添加字符串、日期格式、序号、随机字符串等到新的文件名。
 6. 预览后执行重命名。
 
-## 图片
+## 执行流程：
+```mermaid
+flowchat
+st=>start: 开始
+e=>end: 生成预览重命名列表
+op=>operation: 扫描目标文件夹的所有文件
+op1=>operation: 根据筛选规则筛选目标文件
+op2=>operation: 根据排序规则排序目标文件
+op3=>operation: 根据截取和替换规则对目标文件名进行处理
+op4=>operation: 根据增加模式及表达式对目标文件名进行处理
+st->op->op1->op2->op3->op4->e
+```
+
+## 界面总览
 ![image](https://user-images.githubusercontent.com/34180899/109485385-978d6b00-7abc-11eb-88d6-7ef56fdba24b.png)
+
+### 添加文件来源
+![image](https://user-images.githubusercontent.com/34180899/109486744-3c5c7800-7abe-11eb-8e5c-8bb537d02c80.png)
+
+### 添加筛选条件
+![image](https://user-images.githubusercontent.com/34180899/109487304-ff44b580-7abe-11eb-8129-c60c54bb931d.png)
+
+### 选择排序模式（TODO）
+![image](https://user-images.githubusercontent.com/34180899/109487345-0e2b6800-7abf-11eb-9fbd-7685ac0ec171.png)
+
+### 正则表达式确定截取和替换
+![image](https://user-images.githubusercontent.com/34180899/109487403-20a5a180-7abf-11eb-9d5e-f9522ced1115.png)
+
+### 添加要增加的字符模式
+![image](https://user-images.githubusercontent.com/34180899/109487455-31eeae00-7abf-11eb-81d2-b48197ac8103.png)
+
+### 拼接增加模式表达式
+![image](https://user-images.githubusercontent.com/34180899/109487498-3dda7000-7abf-11eb-8b41-e486d8003b80.png)
