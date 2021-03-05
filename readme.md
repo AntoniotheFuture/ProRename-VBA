@@ -9,17 +9,14 @@ ProRename批量重命名工具，采用VBA实现
 6. 预览后执行重命名。
 
 ## 执行流程：
-```mermaid
-flowchat
-st=>start: 开始
-e=>end: 生成预览重命名列表
-op=>operation: 扫描目标文件夹的所有文件
-op1=>operation: 根据筛选规则筛选目标文件
-op2=>operation: 根据排序规则排序目标文件
-op3=>operation: 根据截取和替换规则对目标文件名进行处理
-op4=>operation: 根据增加模式及表达式对目标文件名进行处理
-st->op->op1->op2->op3->op4->e
-```
+
+1. 扫描目标文件夹的所有文件
+2. 根据筛选规则筛选目标文件
+3. 根据排序规则排序目标文件
+4. 根据截取和替换规则对目标文件名进行处理
+5. 根据增加模式及表达式对目标文件名进行处理
+6. 生成预览重命名列表
+
 
 ## 界面总览
 ![image](https://user-images.githubusercontent.com/34180899/109485385-978d6b00-7abc-11eb-88d6-7ef56fdba24b.png)
